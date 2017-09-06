@@ -1,0 +1,44 @@
+.businessDetail{
+  .businessBaseInforBox{background: #fff;}
+  .businessBaseInforBox .titleBox{text-align: center;padding: 20px 0;}
+  .businessBaseInforBox .titleBox .buisnessName{font-size:2rem;font-weight:bold;}
+  .businessBaseInforBox .titleBox .businessSafeTags{margin-top:10px;}
+  .businessBaseInforBox .titleBox ion-icon{margin: 0 10px;}
+  .businessBaseInforBox .titleBox ion-icon[name=ionitron]{font-size:2.8rem;vertical-align: middle;}
+  .businessExplainBox{padding: 16px;line-height:25px;}
+
+  /*推广的产品*/
+  .businessProductAd ion-card .productNameBox{padding:10px;}
+  .businessProductAd ion-card .productNameBox ion-col[width-33]{text-align: right;color:#ff6640;}
+
+  /*评价*/
+  .businessEvaluateBox .lookMore{float: right;font-size:1.4rem;color:#cbcbcb;}
+  .businessEvaluateBox .evaluteListsBox{margin:0px;}
+  .businessEvaluateBox .evaluteListsBox .item:first-child{border-top:0 none;}
+  .businessEvaluateBox .evaluteListsBox .evaluateContent{white-space: normal;font-size:1.4rem;}
+  .businessEvaluateBox .evaluteListsBox ion-avatar[item-left]{align-self: flex-start;margin:8px 0px 8px 0;}
+  .businessEvaluateBox .evaluteListsBox ion-avatar img{max-width: 2.6rem;max-height: 2.6rem;border-radius: 1.3rem;}
+  .businessEvaluateBox .evaluteListsBox .item h2{height:30px;line-height:30px;font-size:1.4rem;}
+  .businessEvaluateBox .evaluteListsBox .item h2 ion-note{float:right;font-size:1.3rem;color:#cbcbcb;}
+  .evaluteButton{color:#f45949;font-size:1.4rem;}
+
+}
+
+.businessBannerLists{width:100%;height:auto;}
+.businessBannerLists .swiper-container-horizontal > .swiper-pagination{bottom:8px;}
+.businessBannerLists .swiper-pagination-bullet{background: #fff;}
+
+.businessDetailInforLists{margin-bottom:0px;}
+.businessDetailInforLists .item ion-icon{vertical-align: middle;color:#cbcbcb;font-size:2rem;margin-right: 10px;}
+.businessDetailInforLists .item:first-child{border-top:0 none;}
+.businessDetailInforLists .item:last-child{border-bottom:0 none;}
+.businessDetailInforLists .item:first-child .item-inner{border-top:1px solid #c8c7cc}
+.businessDetailInforLists .item:last-child .item-inner{border-bottom:1px solid #c8c7cc}
+
+.businessInforContent{margin-top:10px;background: #fff;padding-bottom: 1px;}
+.businessDetailTitleCom{height:50px;line-height:50px;margin-left: 16px;border-bottom:1px solid #c8c7cc;font-size:1.6rem;}
+
+/*咨询按钮*/
+.consultationFixedBtn{position: fixed;bottom:0px;width:100%;text-align: center;}
+.consultationFixedBtn .button-full{margin:0px;height:50px;line-height:50px;background: #f45949;font-size:1.8rem;}
+.consultationFixedBtn .button-full ion-icon{font-size:2.5rem;margin-right:8px;}

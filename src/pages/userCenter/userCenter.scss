@@ -1,0 +1,28 @@
+
+.platform-ios .myCenter{
+  .mineHead{height: auto;padding-top: 40px;padding-bottom: 10px;}
+}
+.myCenter{
+  .mineHead{width: 100%;height: auto;background:#f45949;padding-top: 20px;padding-bottom: 10px;}
+  .mineHead .headPicCircle{width:100%;height: 100px ;}
+  .mineHead .headPicCircle img{width: 75px;height: 75px;margin: auto;display: inherit;border-radius: 100%;border: 2px solid #fff;}
+  .nameBar{width: 100%;text-align: center;font-size: 1.6rem;color: white;line-height: 2rem;text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+  .tipList{width: 100%;height:auto ;margin: 0;padding: 10px 10% 5px 10%;}
+  .tipList li{float: left;width: auto;display: block;height: 1.6rem;font-size: 1.4rem;line-height: 1.6rem;border-radius: 1.4rem;padding: 0 5px;color:#f45949;background: #ffaea6;margin: 0px 5px 5px 0px; }
+  ion-list.accountList > .item:last-child{border-bottom: none}
+  ion-list.accountList > .item:first-child{border-top: none}
+  ion-list.accountList{margin-bottom: 15px;}
+  .accountList span.accountlab{display: inline-block;color: #333;}
+  .accountList span.moneyIcon{font-size: 0.4rem;float: left;margin-top:0.4rem;}
+  .accountList span.moneyPay{float: left;font-size: 1.8rem}
+  .accountList span.moneyTip{font-size: 0.6rem;float: right;color: #999999;margin-top:0.4rem;}
+
+  ion-list。gotoList .item .item-inner{border-bottom: 1px solid #d8d8d8}
+  ion-list.gotoList > .item:last-child{border-bottom: none}
+  ion-list.gotoList > .item:first-child{border-top: none}
+  ion-icon.gotoIcon{position: relative; top: 0.2rem; margin-right: 8px;}
+  ion-icon.gotoIcon.saleKey{color: #7dcd42;}
+  ion-icon.gotoIcon.requestColor{color: #ebbf27;}
+  ion-icon.gotoIcon.helpColor{color: #27b1eb;}
+  ion-icon.gotoIcon.AboutColor{color: #22dbe2;}
+}

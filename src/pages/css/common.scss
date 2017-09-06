@@ -1,0 +1,36 @@
+/*公共部分*/
+ion-content{background: #f5f5f5 !important;}
+ion-img{contain:content;display: block;}
+/*头部背景*/
+.platform-ios .toolbar{min-height: 64px;padding-top: 20px;}
+.platform-ios ion-title{padding: 12px 90px 0px 90px}
+.toolbar-background{background: #f5594a;border-color:#f5594a ;}
+.toolbar-title{color: white}
+.bar-button-default{color: white}
+.toolbar-title{font-weight: normal;}
+
+/*底部tab*/
+.tab-button{min-height: 60px;}
+ion-tabbar{background: white;}
+.tab-button:hover:not(.disable-hover), .tab-button[aria-selected=true]{  color: #f5594a;}
+.tab-button{color: #9a9a9a;}
+
+/*content 样式*/
+.bgGrey scroll-content{background: #f4f4f4;}
+scroll-content::-webkit-scrollbar{width: 0px;}/*将滚动条宽度变为0px*/
+[padding] .scroll-content{padding: 0px !important;}
+.bgGrey{background: #f4f4f4}
+*{font-family: -apple-system, "microsoft yahei"}
+ion-list ion-item-options{border-bottom: none}
+
+.over-ellipsis{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+/*设置颜色值*/
+button[color=yellow]{background: #ff9c00;}
+
+/*设置item最后一行底部无边框*/
+.borderBotNone .item-inner{border-bottom:0 none !important;}
+
+/*设置ion-list item没有borderTop*/
+.setItemNoBorderTop{margin-top:0px;}
+.setItemNoBorderTop .item:first-child{border-top:0 none !important;}

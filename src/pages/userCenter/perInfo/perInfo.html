@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>个人信息</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="perInfo bgGrey">
+  <ion-list class="setInfoList">
+
+    <ion-item-divider color="light"></ion-item-divider>
+    <ion-item class="selectitem">
+      <ion-label class="insert">头像</ion-label>
+
+      <img class="headPicW" item-right src="img/myCenter/headtext.jpeg">
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+    <ion-item class="selectitem nicName">
+      <ion-label  class="insert">昵称</ion-label>
+
+      <ion-label class="nickNamPlace"  item-right>请输入昵称</ion-label>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+    <ion-item-divider color="light"></ion-item-divider>
+    <ion-item class="selectitem">
+      <ion-label>性别</ion-label>
+      <ion-select [(ngModel)]="gaming" placeholder="请选择" okText="确定" cancelText="取消">
+        <ion-option value="nes">男</ion-option>
+        <ion-option value="n64">女</ion-option>
+      </ion-select>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+    <ion-item class="selectitem">
+      <ion-label>年龄</ion-label>
+      <ion-select [(ngModel)]="gaming" placeholder="请选择" >
+        <ion-option value="nes">10</ion-option>
+        <ion-option value="n64">20</ion-option>
+        <ion-option value="n64">30</ion-option>
+        <ion-option value="n64">40</ion-option>
+      </ion-select>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+
+    <ion-item class="selectitem">
+      <ion-label>城市</ion-label>
+      <ion-select [(ngModel)]="gaming" placeholder="请选择">
+        <ion-option value="nes">10</ion-option>
+        <ion-option value="n64">20</ion-option>
+        <ion-option value="n64">30</ion-option>
+        <ion-option value="n64">40</ion-option>
+      </ion-select>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+
+    <ion-item class="selectitem">
+      <ion-label>学历</ion-label>
+      <ion-select [(ngModel)]="gaming" placeholder="请选择">
+        <ion-option value="nes">10</ion-option>
+        <ion-option value="n64">20</ion-option>
+        <ion-option value="n64">30</ion-option>
+        <ion-option value="n64">40</ion-option>
+      </ion-select>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+
+    <ion-item class="selectitem">
+      <ion-label>S的画像</ion-label>
+      <ion-select [(ngModel)]="gaming" placeholder="请选择">
+        <ion-option value="nes">10</ion-option>
+        <ion-option value="n64">20</ion-option>
+        <ion-option value="n64">30</ion-option>
+        <ion-option value="n64">40</ion-option>
+      </ion-select>
+      <ion-icon name="ios-arrow-forward" class="arrowRight" item-right color="light"></ion-icon>
+    </ion-item>
+
+
+  </ion-list>
+
+
+</ion-content>

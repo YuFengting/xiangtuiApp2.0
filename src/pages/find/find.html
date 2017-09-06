@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      发现
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<div class="findNavSortLists" [class.setHeightSty]="setHeightStyTrue" >
+  <div class="navSortListsBox">
+    <div class="selectWay" (click)="selectOption(1)"><span>选择行业<ion-icon name="md-arrow-dropdown"></ion-icon></span></div>
+    <div class="selectWay" (click)="selectOption(2)"><span>只能排序<ion-icon name="md-arrow-dropdown"></ion-icon></span></div>
+    <div class="selectWay" (click)="selectOption(3)"><span>选择地区<ion-icon name="md-arrow-dropdown"></ion-icon></span></div>
+    <div class="selectWay" tappable (click)="goSearchPage()"><span>搜索<ion-icon name="ios-search-outline"></ion-icon></span></div>
+  </div>
+  <div class="showSelectBox" *ngIf="setSelectBoxFlag"  (click)="closeSelectOption()">
+      <ion-list class="selectOptionLists"  *ngIf="selectIndex == 1" radio-group>
+        <ion-item>
+          <ion-radio checked="true" value="美容美发"></ion-radio>
+          <ion-label>美容美发</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="金融贸易"></ion-radio>
+          <ion-label>金融贸易</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="骑车培训"></ion-radio>
+          <ion-label>骑车培训</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="二手车"></ion-radio>
+          <ion-label>二手车</ion-label>
+        </ion-item>
+        <!--<ion-item (click)="selectCurrent(1)" [class.active]="curIndex == 1"><span><ion-icon *ngIf="curIndex == 1" name="md-checkmark"></ion-icon></span>美容美发</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(2)" [class.active]="curIndex == 2"><span><ion-icon *ngIf="curIndex == 2" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(3)" [class.active]="curIndex == 3"><span><ion-icon *ngIf="curIndex == 3" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(4)" [class.active]="curIndex == 4"><span><ion-icon *ngIf="curIndex == 4" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(5)" [class.active]="curIndex == 5"><span><ion-icon *ngIf="curIndex == 5" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(6)" [class.active]="curIndex == 6"><span><ion-icon *ngIf="curIndex == 6" name="md-checkmark"></ion-icon></span>骑车培训 二手车</ion-item>-->
+      </ion-list>
+      <ion-list class="selectOptionLists"  *ngIf="selectIndex == 2" radio-group>
+        <ion-item >
+          <ion-radio  checked="true" value="美容美发"></ion-radio>
+          <ion-label>美容美发</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="金融贸易"></ion-radio>
+          <ion-label>金融贸易</ion-label>
+        </ion-item>
+        <!--<ion-item (click)="selectCurrent(1)" [class.active]="curIndex == 1"><span><ion-icon *ngIf="curIndex == 1" name="md-checkmark"></ion-icon></span>美容美发2222222</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(2)" [class.active]="curIndex == 2"><span><ion-icon *ngIf="curIndex == 2" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+      </ion-list>
+      <ion-list class="selectOptionLists" *ngIf="selectIndex == 3" radio-group>
+        <ion-item>
+          <ion-radio checked="true" value="美容美发"></ion-radio>
+          <ion-label>美容美发</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="金融贸易"></ion-radio>
+          <ion-label>金融贸易</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio  value="骑车培训"></ion-radio>
+          <ion-label>骑车培训</ion-label>
+        </ion-item>
+        <!--<ion-item (click)="selectCurrent(1)" [class.active]="curIndex == 1"><span><ion-icon *ngIf="curIndex == 1" name="md-checkmark"></ion-icon></span>美容美发3333333</ion-item>-->
+        <!--<ion-item (click)="selectCurrent(2)" [class.active]="curIndex == 2"><span><ion-icon *ngIf="curIndex == 2" name="md-checkmark"></ion-icon></span>金融贸易</ion-item>-->
+      </ion-list>
+  </div>
+</div>
+<ion-content class="find">
+  <div class="findIndex-adbanner" *ngIf="setHideFlag">
+    <ion-img width="100%" height="auto" src="img/adbanner.png"></ion-img>
+    <ion-icon name="ios-close-circle" (click)="closeBannerImg()"></ion-icon>
+  </div>
+
+  <ion-list class="businessInforLists">
+    <ion-item (click)="gobusinessDetail()">
+      <ion-avatar item-left class="buisnessHeadImg">
+        <img src="img/midautumn.jpg">
+      </ion-avatar>
+      <h2>财付通<ion-icon class="businessVIcon" name="star" color="primary"></ion-icon></h2>
+      <h3 class="businessSafeTags"><span>公司认证</span><span>平台保障</span></h3>
+      <p class="over-ellipsis">互联网 / 金融理财</p>
+      <ion-note item-right="" class="note note-ios">最近活跃：1个月前</ion-note>
+      <div class="businessCommission">佣金：<p><span color="danger">2k~5k</span> 元</p></div>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left class="buisnessHeadImg">
+        <img src="img/midautumn.jpg">
+      </ion-avatar>
+      <h2>财付通<ion-icon class="businessVIcon" name="star" color="primary"></ion-icon></h2>
+      <h3 class="businessSafeTags"><span>公司认证</span><span>平台保障</span></h3>
+      <p class="over-ellipsis">互联网 / 金融理财</p>
+      <ion-note item-right="" class="note note-ios">最近活跃：10天前</ion-note>
+      <div class="businessCommission">佣金：<p><span color="danger">600</span> 元</p></div>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-left class="buisnessHeadImg">
+        <img src="img/midautumn.jpg">
+      </ion-avatar>
+      <h2>财付通<ion-icon class="businessVIcon" name="star" color="primary"></ion-icon></h2>
+      <h3 class="businessSafeTags"><span>公司认证</span><span>平台保障</span></h3>
+      <p class="over-ellipsis">互联网 / 金融理财</p>
+      <ion-note item-right="" class="note note-ios">最近活跃：今天</ion-note>
+      <div class="businessCommission">佣金：<p><span color="danger">1000</span> 元</p></div>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,29 @@
+
+/*销售线索列表页*/
+.saleClue{
+
+  ion-list.saleClueList .item:last-child{border-bottom: none}
+  ion-list.saleClueList  .item .item-inner{border-color: #d8d8d8}
+  ion-list.saleClueList .item  ion-thumbnail[item-left]{margin: 8px 8px 8px 0}
+  ion-list.saleClueList .item  ion-thumbnail{min-width: 4.6rem;min-height: 4.6rem}
+  ion-thumbnail img{border-radius: 0.6rem;max-width: 4.6rem;max-height: 4.6rem}
+  .nameContent[item-left]{margin: 8px 4px 8px 0px;text-align: left}
+  .nameContent{line-height: 2rem;width: auto;display: inline-block;float: left;max-width: 54px}
+  .nameContent ion-icon{font-size: 1.8rem;color: #d0d0d0}
+  .busContent {margin:0px 0px 0px 4px;}
+  .busContent{font-size: 1.4rem;color: #999;line-height: 2rem;width: auto;display: inline-block;float: left;max-width: 120px;}
+  .busContent .time{color: #ccc;}
+  .busContent .time span:first-child{margin-right: 5px}
+  .progressInfo{margin: 0 0 0 0;}
+  .progressInfo{text-align: center;font-size: 1.4rem}
+  .progressInfo .progressTiltle{color: #ccc;line-height: 2rem;}
+  .progressInfo .progress{background: #ccc;color: #fff;border-radius:1.6rem;padding: 0px 4px 0px 4px;font-size: 1.2rem;font-size: 1rem;
+    line-height: 1.6rem;  margin-top: 0.3rem;min-width: 44px;}
+
+  .nameContent ion-icon.picBlueColor{color: #4ea7eb}
+  .nameContent ion-icon.vedioYellowColor{color: #efc813}
+  .nameContent ion-icon.voiceGreenColor{color: #6fcc41}
+  .progressInfo .progress.duing{background:#6fcc41}
+  .progressInfo .progress.notReaded{background:#f45949}
+
+}

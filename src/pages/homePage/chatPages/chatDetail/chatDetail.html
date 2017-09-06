@@ -1,0 +1,223 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>小米科技</ion-title>
+
+    <ion-buttons end>
+      <button class="transBtn">
+        <span class="applySaleBtn">申请云销售</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content  class="chatDetail greyBg2" (click)="closeEmoji()">
+
+  <div class="chatGroup">
+
+    <!--对方说话文字-->
+     <div class="chatItem">
+         <div class="timeInfo"><span class="inputTime">15:22</span></div>
+         <div class="chatMessage clearfix">
+           <div class="userHeader"><img src="img/headtext.jpeg"></div>
+           <div class="talkItem">
+             <div class="talkErrow"></div>
+             <div class="talk">你的想法很不错，可以试一试可以试一试</div>
+           </div>
+         </div>
+     </div>
+  <!--自己说话文字-->
+    <div class="chatItem selfItem">
+      <div class="timeInfo"><span class="inputTime">15:22</span></div>
+      <div class="chatMessage clearfix">
+        <div class="userHeader"><img src="img/headtext.jpeg"></div>
+        <div class="talkItem">
+          <div class="talkErrow"></div>
+          <div class="talk">你的想法很不错，可以试一试可以试一试</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--对方发送任务-->
+    <div class="chatItem">
+      <div class="timeInfo"><span class="inputTime">15:22</span></div>
+      <div class="chatMessage clearfix">
+        <div class="userHeader"><img src="img/headtext.jpeg"></div>
+        <div class="talkItem istask">
+          <div class="talkErrow"></div>
+          <div class="talk ">
+            <div class="title hide2line">Xiaomi/小米 小米笔记本 AIR12.5英寸超薄商务手提电脑</div>
+            <div class="task clearfix">
+              <div class="taskmsg fl hide3line">
+                128G固态 硬盘4G内存 轻薄金属机身家庭影音 女性定位轻薄便携 学生 商务办公女性定位轻薄便携
+              </div>
+              <div class="picInfo fr">
+                <img src="img/headtext.jpeg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--自己发送任务-->
+    <div class="chatItem selfItem">
+      <div class="timeInfo"><span class="inputTime">15:22</span></div>
+      <div class="chatMessage clearfix">
+        <div class="userHeader"><img src="img/headtext.jpeg"></div>
+        <div class="talkItem istask">
+          <div class="talkErrow"></div>
+          <div class="talk ">
+            <div class="title hide2line">Xiaomi/小米 小米笔记本 AIR12.5英寸超薄商务手提电脑</div>
+            <div class="task clearfix">
+              <div class="taskmsg fl hide3line">
+                128G固态 硬盘4G内存 轻薄金属机身家庭影音 女性定位轻薄便携 学生 商务办公女性定位轻薄便携
+              </div>
+              <div class="picInfo fr">
+                <img src="img/headtext.jpeg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--自己发送销售线索-->
+    <div class="chatItem selfItem">
+      <div class="timeInfo"><span class="inputTime">15:22</span></div>
+      <div class="chatMessage clearfix">
+        <div class="userHeader"><img src="img/headtext.jpeg"></div>
+        <div class="talkItem isClue">
+          <div class="talkErrow"></div>
+          <div class="talk ">
+             <div class="clueTop">
+               <ion-icon name="ios-alarm"></ion-icon>销售线索
+             </div>
+            <div class="clueDetail">
+              <div class="line nameInfo">姓名：张强</div>
+              <div class="line telInfo">电话：12345678901</div>
+              <div class="beizhuInfo hide2line">这是一个很有潜力的线索，认识圈内人士，需求量十分的大，可以深挖</div>
+            </div>
+            <div class="iconGroup">
+              <ion-icon name="ios-alarm"></ion-icon>
+              <ion-icon name="ios-alarm"></ion-icon>
+              <ion-icon name="ios-alarm"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="chatFoot">
+
+    <div class="inputLine clearfix"  *ngIf="isInput">
+      <div class="changeBtn fl" (click)="changeInput()">
+        <ion-icon name="ios-alarm"></ion-icon>
+      </div>
+      <input type="text">
+      <div class="changeBtn fr" (click)="changeEmoji()">
+        <ion-icon name="ios-alarm"></ion-icon>
+      </div>
+    </div>
+
+
+    <div class="inputLine clearfix submitLine" *ngIf="!isInput">
+      <div class="changeBtn fl" (click)="changeInput()">
+        <ion-icon name="ios-alarm"></ion-icon>
+      </div>
+      <div class="submintBtn" (click)="goSubmitLeads()">
+        <ion-icon name="ios-alarm"></ion-icon>提交销售线索
+      </div>
+    </div>
+
+    <div class="expression"  *ngIf="showEmoji">
+      <ion-slides [options]="{pager:true}" >
+
+        <ion-slide class="emojiBox">
+               <img src="img/emoji/baobao.png">
+               <img src="img/emoji/baoyou.png">
+               <img src="img/emoji/bishi.png">
+               <img src="img/emoji/bukaixin.png">
+               <img src="img/emoji/cuowu.png">
+               <img src="img/emoji/dabian.png">
+               <img src="img/emoji/dianhua.png">
+               <img src="img/emoji/erduo.png">
+               <img src="img/emoji/fangzi.png">
+               <img src="img/emoji/feiwen.png">
+               <img src="img/emoji/fennu.png">
+               <img src="img/emoji/gaogenxie.png">
+               <img src="img/emoji/geili.png">
+               <img src="img/emoji/gongjiaoche.png">
+               <img src="img/emoji/gou.png">
+               <img src="img/emoji/gui.png">
+               <img src="img/emoji/guzhang.png">
+               <img src="img/emoji/haixiu.png">
+          <img src="img/emoji/houzi.png">
+          <img src="img/emoji/jiangbei.png">
+          <img src="img/emoji/jingkong.png">
+          <img src="img/emoji/kafei.png">
+          <img src="img/emoji/kouhong.png">
+          <img src="img/emoji/kuqi.png">
+          <img src="img/emoji/lenghan.png">
+          <img src="img/emoji/lingdang.png">
+          <img src="img/emoji/meigui.png">
+        </ion-slide>
+
+        <ion-slide class="emojiBox">
+
+
+          <img src="img/emoji/muji.png">
+          <img src="img/emoji/nansheng.png">
+          <img src="img/emoji/nvsheng.png">
+          <img src="img/emoji/ok.png">
+          <img src="img/emoji/pijiu.png">
+          <img src="img/emoji/qian.png">
+          <img src="img/emoji/qiche.png">
+          <img src="img/emoji/quantou.png">
+          <img src="img/emoji/ruo.png">
+          <img src="img/emoji/shengbing.png">
+          <img src="img/emoji/shengdanshu.png">
+          <img src="img/emoji/shengli.png">
+          <img src="img/emoji/shiran.png">
+          <img src="img/emoji/shouji.png">
+          <img src="img/emoji/shouqiang.png">
+          <img src="img/emoji/shousi.png">
+          <img src="img/emoji/shuijiao.png">
+          <img src="img/emoji/tiaopi.png">
+          <img src="img/emoji/tongku.png">
+          <img src="img/emoji/touxiao.png">
+          <img src="img/emoji/weixiao.png">
+          <img src="img/emoji/xiangshang.png">
+          <img src="img/emoji/xiangxia.png">
+          <img src="img/emoji/xiangyou.png">
+          <img src="img/emoji/xiangzuo.png">
+          <img src="img/emoji/xiayu.png">
+          <img src="img/emoji/yanjing.png">
+        </ion-slide>
+
+        <ion-slide>
+
+          <img src="img/emoji/yao.png">
+          <img src="img/emoji/yiyuan.png">
+          <img src="img/emoji/yu.png">
+          <img src="img/emoji/zan.png">
+          <img src="img/emoji/zhengque.png">
+          <img src="img/emoji/zhu.png">
+        </ion-slide>
+
+      </ion-slides>
+
+    </div>
+
+  </ion-toolbar>
+</ion-footer>

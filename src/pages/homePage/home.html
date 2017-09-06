@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar class="appnavBar">
+    <ion-title>销售版</ion-title>
+
+
+    <ion-buttons start>
+      <button class="transBtn">
+        <span class="changePageBtn">  <ion-icon name="contact"></ion-icon>切换版本</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home bgGrey" >
+  <!--头部置顶会话-->
+  <ion-list class="chatList">
+    <ion-item class="chatItem" (click)="gochatClue()">
+      <ion-avatar item-left>
+        <img class="chatUserHead" src="img/home/xiaoshouHead.png">
+      </ion-avatar>
+      <h2 class="over-ellipsis talkUserName">销售线索消息</h2>
+      <span class="chatTime ">2016-01-12</span>
+      <p class="over-ellipsis  chatInfo">成单啦！你提交的【东岭咖啡】销售线索已完成，哈哈哈哈哈</p>
+    </ion-item>
+
+
+    <ion-item class="chatItem">
+      <ion-avatar item-left>
+        <img class="chatUserHead" src="img/home/tixianHead.png">
+        <ion-badge class="msgBadge">9</ion-badge>
+      </ion-avatar>
+      <h2 class="over-ellipsis talkUserName">提现消息</h2>
+      <span class="chatTime ">2016-01-12</span>
+      <p class="over-ellipsis  chatInfo">有新的销售线索，请注意查看</p>
+    </ion-item>
+
+
+
+    <ion-item class="chatItem">
+      <ion-avatar item-left>
+        <img class="chatUserHead" src="img/home/yaoqingHead.png">
+        <ion-badge class="msgBadge">9</ion-badge>
+      </ion-avatar>
+      <h2 class="over-ellipsis talkUserName">邀请消息</h2>
+      <span class="chatTime ">2016-01-12</span>
+      <p class="over-ellipsis  chatInfo">有新的销售线索，请注意查看</p>
+    </ion-item>
+
+
+
+    <ion-item class="chatItem" (click)="gochatSys()">
+      <ion-avatar item-left>
+        <img class="chatUserHead" src="img/home/xitongHead.png">
+        <ion-badge class="msgBadge">9</ion-badge>
+      </ion-avatar>
+      <h2 class="over-ellipsis talkUserName">系统消息</h2>
+      <span class="chatTime ">2016-01-12</span>
+      <p class="over-ellipsis  chatInfo">有新的销售线索，请注意查看</p>
+    </ion-item>
+
+  </ion-list>
+
+  <!--底部分类会话-->
+  <ion-list class="chatList">
+    <ion-item-sliding>
+      <ion-item class="chatItem" (click)="gochatDetail()">
+        <ion-avatar item-left>
+          <img class="chatUserHead" src="img/headtext.jpeg">
+        </ion-avatar>
+        <h2 class="over-ellipsis talkUserName">小米科技</h2>
+        <span class="levelIcon"></span>
+        <span class="chatTime ">11:23</span>
+        <p class="over-ellipsis  chatInfo">昨天的提交的单已经OK了，我稍后给你佣金</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item class="chatItem">
+        <ion-avatar item-left>
+          <img class="chatUserHead" src="img/headtext.jpeg">
+          <ion-badge class="msgBadge">9</ion-badge>
+        </ion-avatar>
+        <h2 class="over-ellipsis talkUserName">系统消息</h2>
+        <span class="chatTime ">2016-01-12</span>
+        <p class="over-ellipsis  chatInfo">有新的销售线索，请注意查看</p>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger">
+          删除
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

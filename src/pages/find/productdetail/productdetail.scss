@@ -1,0 +1,11 @@
+.productDetail{
+  .productBannerLists{width:100%;height:auto;}
+  .productBannerLists .swiper-container-horizontal > .swiper-pagination{bottom:8px;}
+  .productBannerLists .swiper-pagination-bullet{background: #fff;}
+
+  .setTitleFontSize{font-size:2rem;font-weight:bold;}
+  .voiceInforBox{padding:10px 20px;}
+  .propagandaDataLists ion-avatar img{border-radius: inherit;}
+  .propagandaDataLists ion-row ion-col{padding:5px 0;}
+  .propagandaDataLists ion-item h2{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+}

@@ -1,0 +1,23 @@
+page-sysmsg{
+  .chatGroup{width: 100%;height: auto;padding-top: 16px;}
+  .chatGroup .chatItem{width: 100%;height: auto;position: relative;}
+  .chatGroup .chatItem .timeInfo{width: 100%;text-align: center;}
+  .chatGroup .chatItem .inputTime{width: auto;height: 2rem;line-height: 2rem;padding: 0 1rem;border-radius: 2rem;background: #ccc;color: #fff;}
+  .chatGroup .chatItem .chatMessage{width: 100%;padding: 16px;}
+
+  .chatMessage .sysMsg{width: 100%;height: auto;background: #fff;border-radius: 0.4rem;box-shadow: 0px 1px 4px rgba(0,0,0,.2);padding: 12px 10px;font-size: 1.6rem;line-height: 2rem;}
+
+
+
+  .chatMessage .inviteMsg{width: 100%;height: auto;background: #fff;border-radius: 0.4rem;box-shadow: 0px 1px 4px rgba(0,0,0,.2);}
+
+  .inviteMsg  .stateLine{width: 100%;padding: 5px 10px;border-top: 1px solid #d8d8d8;font-size: 1.4rem;}
+
+  .inviteMsg  .stateLine{width: 100%;padding: 5px 10px;border-top: 1px solid #d8d8d8;font-size: 1.4rem;}
+  .inviteMsg  .stateLine .stateInfo{width: auto;}
+  .inviteMsg  .stateLine .stateInfo .stateTit{color: #999;}
+  .inviteMsg  .stateLine .stateInfo .stateItem{color: #ff0000;}
+  .inviteMsg  .inviteInfo {color: #333;padding: 10px ;line-height: 2.0rem;font-size: 1.6rem;}
+  .inviteMsg  .inviteInfo .busName{color: #0c60ee;margin-right: 4px;}
+  .inviteMsg  .stateLine .stateInfo span:last-child{margin-left: 10px}
+}

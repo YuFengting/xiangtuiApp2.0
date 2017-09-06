@@ -1,0 +1,97 @@
+.home {
+  /*会话列表*/
+  ion-list.chatList{margin: -1px 0 16px 0}
+  .talkUserName{width: auto;display: inline-block;max-width: 50%;margin: 0 0 2px;}
+  .item h2.talkUserName:first-child{margin: 0 0 2px;}
+  .chatTime{display: inline-block;position: absolute;right: 5px;color: #cccccc;font-size: 1.2rem;top: 10px;}
+  .item p.chatInfo{font-size: 1.4rem;color: #999}
+  ion-avatar img.chatUserHead{border-radius: 0.6rem}
+  .chatItem ion-label{border-bottom: 1px solid #e5e5e5}
+  .chatItem ion-label:last-child{border-bottom: none}
+  .msgBadge{font-size: 0.6rem;font-weight: normal;background-color: #ff3b30;position: absolute;top: -8px;right: -10px;padding: 3px;min-width: 18px;}
+  .chatItem ion-avatar{position: relative;}
+  .item-wrapper:last-child .item.chatItem{border-bottom: none;}
+  ion-list .item.chatItem .item-inner{border-bottom: 1px solid #e5e5e5}
+  ion-list .item.chatItem:last-child .item-inner{border-bottom: none}
+  ion-list ion-item-sliding:last-child .item.chatItem .item-inner{border-bottom: none}
+  ion-list .item.chatItem:last-child{border-bottom: none}
+  /*加Vicon*/
+  .levelIcon{display: inline-block;background-image: url('../../img/home/lev1.png');background-size: 100% 100%;width: 18px;height: 18px;position: relative;top: -2px;}
+
+  .scroll-content{padding: 0px !important;}
+
+
+  .transBtn{background: transparent;}
+  .transBtn .changePageBtn{padding: 0 6px;}
+}
+
+/*返回按钮icon替换*/
+
+.ion-md-arrow-back:before {
+  //content: "\f27d";
+  content: "\f3cf";
+}
+
+
+.transBtn{background: transparent;}
+.transBtn .changePageBtn{padding: 0 6px;}
+ion-app.md [padding], ion-app.md [padding] .scroll-content{padding: 0px;}
+.scroll-content{padding: 0px !important;}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{background-image: none;}
+/*公共部分*/
+
+/*头部背景*/
+.platform-ios .toolbar{min-height: 64px;padding-top: 20px;}
+.platform-ios .ion-title{padding: 12px 90px 0px 90px}
+.toolbar-background{background: #f5594a;border-color:#f5594a ;}
+.toolbar-title{color: white; }
+.platform-ios .toolbar-title{ position: relative; top: 8px;}
+.bar-button-default{color: white}
+.toolbar-title{font-weight: normal;}
+ion-title,.toolbar-ios ion-title{position: absolute;top: 0;left: 0; padding: 0 90px 1px; width: 100%; height: 100%; -webkit-transform: translateZ(0); transform: translateZ(0); pointer-events: none;}
+
+/*修改android样式*/
+.toolbar-title-md{font-size: 1.7rem;text-align: center; pointer-events: auto;}
+.bar-buttons-md{ -webkit-order: 3; -ms-flex-order: 3; order: 3; -webkit-transform: translateZ(0); transform: translateZ(0);}
+.toolbar-content-md{ -webkit-flex: 1;-ms-flex: 1; flex: 1; -webkit-order: 4; -ms-flex-order: 4; order: 4; min-width: 0;}
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{border-color:transparent}
+
+
+/*底部tab*/
+.tab-button{min-height: 60px !important;}
+.tabs-md .tabbar{background: white;border-top: 1px  solid  #d8d8d8;}
+.tabs-ios .tabbar{background: white;border-top: 1px  solid  #d8d8d8;}
+.ion-tabbar{background: white;border-top: 1px  solid  #d8d8d8;}
+.tabs-md .tab-button[aria-selected=true],.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true],.tab-button:hover:not(.disable-hover), .tab-button[aria-selected=true]{  color: #f5594a;}
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon,.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{  color: #f5594a;}
+.tabs-ios .tab-button-icon,.tabs-md .tab-button-icon,.tabs-ios .tab-button,.tabs-md .tab-button,.tab-button{color: #9a9a9a;}
+
+/*content 样式*/
+.bgGrey .scroll-content{background: #f4f4f4;}
+.scroll-content::-webkit-scrollbar{width: 0px;}/*将滚动条宽度变为0px*/
+.scroll-content{padding: 0px}
+.bgGrey{background: #f4f4f4}
+*{font-family: -apple-system, "microsoft yahei"}
+.ion-list .ion-item-options{border-bottom: none}
+
+.over-ellipsis{display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+
+/*切换版本头部*/
+.changePageBtn{width: 80px;height:20px;line-height: 20px; background: white;border-radius: 20px;color:#ff8181;font-size: 0.8rem; }
+.changePageBtn .ion-icon{margin-right: 5px;}
+
+/*清除浮动*/
+.clearfix:after,.clearfix:before{display:table;content:"";line-height:0}
+.clearfix:after{clear:both}
+
+
+.fl{float: left}
+.fr{float: right}
+
+.hide2line{overflow: hidden;text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; white-space:normal;}
+.hide3line{overflow: hidden;text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; white-space:normal;}
+
+.alert-button:last-child{font-weight: normal;color: #f5594a}
+.greyBg2{background: #f5f5f5}

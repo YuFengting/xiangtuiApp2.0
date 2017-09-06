@@ -1,0 +1,47 @@
+<ion-content padding class="myCenter bgGrey">
+  <div class="mineHead">
+    <div class="headPicCircle" (click)="gosetInfoPage()">
+      <img src="img/myCenter/headtext.jpeg">
+      <div class="nameBar over-ellipsis">用户昵称</div>
+    </div>
+    <ul class="tipList clearfix">
+      <li>活力四射</li>
+      <li>爆发</li>
+      <li>口才帝</li>
+      <li>销售天才</li>
+      <li>成单王</li>
+      <li>诚实</li>
+      <li>工作狂</li>
+      <li>魅力</li>
+    </ul>
+  </div>
+  <ion-list class="accountList">
+    <button ion-item  (click)=" gobillPage()">
+      <span class="moneyIcon accountlab">￥</span>
+      <span class="moneyPay accountlab">1956.25</span>
+      <span class="moneyTip accountlab">账户安全保护中</span>
+    </button>
+  </ion-list>
+
+
+  <ion-list class="accountList gotoList">
+    <button ion-item (click)="gosaleCluePage()">
+      <ion-icon name="aperture" class="saleKey gotoIcon"></ion-icon>销售线索
+    </button>
+
+    <button ion-item >
+      <ion-icon name="aperture" class="requestColor gotoIcon"></ion-icon>意见反馈
+    </button>
+
+
+    <button ion-item >
+      <ion-icon name="aperture" class="helpColor gotoIcon"></ion-icon>帮助中心
+    </button>
+
+
+    <button ion-item >
+      <ion-icon name="aperture" class="AboutColor gotoIcon"></ion-icon>关于我们
+    </button>
+  </ion-list>
+
+</ion-content>

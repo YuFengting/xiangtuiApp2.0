@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>销售线索</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="saleClue bgGrey">
+  <ion-list class="saleClueList">
+    <ion-item (click)="goclueDetailPage()">
+      <ion-thumbnail item-left>
+        <img src="img/myCenter/headtext.jpeg">
+      </ion-thumbnail>
+      <div class="nameContent">
+        <div class="over-ellipsis">杨雪丽</div>
+        <div>
+         <ion-icon name="ios-alarm" [class.picBlueColor]="true"></ion-icon>
+          <ion-icon name="ios-alarm"[class.vedioYellowColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.voiceGreenColor]="false"></ion-icon>
+        </div>
+      </div>
+      <div  class="busContent over-ellipsis">
+       <div class="over-ellipsis">常州太平洋保险</div>
+        <div class="over-ellipsis time"><span>2017-02-01</span><span>12:56</span>      </div>
+      </div>
+      <div item-right class="progressInfo">
+        <div class="progressTiltle ">进度</div>
+        <div class="progress " [class.duing]="duingFlag"  [class.notReaded]="readFlag">{{progressItem}}</div>
+      </div>
+    </ion-item>
+    <ion-item class="clearfix">
+      <ion-thumbnail item-left>
+        <img src="img/myCenter/headtext.jpeg">
+      </ion-thumbnail>
+      <div  class="nameContent">
+        <div class="over-ellipsis">杨雪丽</div>
+        <div>
+          <ion-icon name="ios-alarm" [class.picBlueColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.vedioYellowColor]="true"></ion-icon>
+          <ion-icon name="ios-alarm"[class.voiceGreenColor]="false"></ion-icon>
+        </div>
+      </div>
+      <div class="busContent over-ellipsis">
+        <div class="over-ellipsis">常州太平洋保险</div>
+        <div class="over-ellipsis time"><span>2017-02-01</span><span>12:56</span>      </div>
+      </div>
+      <div item-right class="progressInfo">
+        <div class="progressTiltle ">进度</div>
+        <div class="progress " [class.duing]="true"  [class.notReaded]="false">处理中</div>
+      </div>
+    </ion-item>
+    <ion-item class="clearfix">
+      <ion-thumbnail item-left>
+        <img src="img/myCenter/headtext.jpeg">
+      </ion-thumbnail>
+      <div  class="nameContent">
+        <div class="over-ellipsis">杨雪丽</div>
+        <div>
+          <ion-icon name="ios-alarm" [class.picBlueColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.vedioYellowColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.voiceGreenColor]="true"></ion-icon>
+        </div>
+      </div>
+      <div class="busContent over-ellipsis">
+        <div class="over-ellipsis">常州太平洋保险</div>
+        <div class="over-ellipsis time"><span>2017-02-01</span><span>12:56</span>      </div>
+      </div>
+      <div item-right class="progressInfo">
+        <div class="progressTiltle ">进度</div>
+        <div class="progress " [class.duing]="false"  [class.notReaded]="false">未成单</div>
+      </div>
+    </ion-item>
+    <ion-item class="clearfix">
+      <ion-thumbnail item-left>
+        <img src="img/myCenter/headtext.jpeg">
+      </ion-thumbnail>
+      <div  class="nameContent">
+        <div class="over-ellipsis">杨雪丽</div>
+        <div>
+          <ion-icon name="ios-alarm" [class.picBlueColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.vedioYellowColor]="false"></ion-icon>
+          <ion-icon name="ios-alarm"[class.voiceGreenColor]="false"></ion-icon>
+        </div>
+      </div>
+      <div class="busContent over-ellipsis">
+        <div class="over-ellipsis">常州太平洋保险</div>
+        <div class="over-ellipsis time"><span>2017-02-01</span><span>12:56</span>      </div>
+      </div>
+      <div item-right class="progressInfo">
+        <div class="progressTiltle ">进度</div>
+        <div class="progress " [class.duing]="false"  [class.notReaded]="false">成单</div>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

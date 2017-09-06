@@ -1,0 +1,6 @@
+
+/*底部tab*/
+.tab-button{min-height: 60px !important;}
+.ion-tabbar{background: white;border-top: 1px  solid  #d8d8d8;}
+.tab-button:hover:not(.disable-hover), .tab-button[aria-selected=true]{  color: #f5594a;}
+.tab-button{color: #9a9a9a;}

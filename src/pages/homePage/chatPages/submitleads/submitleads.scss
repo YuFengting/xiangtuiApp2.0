@@ -1,0 +1,17 @@
+page-submitleads {
+  .submitLeadsLists{margin:10px 0 0;}
+  .submitLeadsLists .item-block{border:0 none !important;}
+  .submitLeadsLists .item-block ion-icon{color:#999999;}
+  .submitLeadsLists ion-label[fixed]{color:#999999;}
+  .submitLeadsLists ion-input input{text-align:right;}
+
+  .saleLeadsContent{margin-top:10px;background: #fff;padding: 10px;}
+  .saleLeadsContent .addLeadsBox{float: left;position: relative;margin-right:10px;}
+  .saleLeadsContent .addLeadsBox .closeBtn{position: absolute;right:-5px;top: -8px;font-size: 2.4rem;color: #cccccc;}
+  .saleLeadsContent .addLeadsBox .addLeadsIcon{background: #f5f5f5;width: 60px;height: 60px;border-radius: 5px;display: inline-block;text-align: center;line-height: 60px;overflow: hidden;}
+  .saleLeadsContent .addLeadsBox .addLeadsIcon ion-icon{font-size:3rem;color:#e4e4e4;vertical-align: middle;}
+  .saleLeadsContent .addLeadsBox ion-label{color:#999999;margin:10px 0 0;}
+
+  .submitLeadsBtn{padding: 20px;}
+  .submitLeadsBtn .button-block{background-color: #f45949;}
+}

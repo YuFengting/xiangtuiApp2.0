@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>企业详情</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="businessDetail">
+  <ion-slides class="businessBannerLists" pager="true">
+    <ion-slide>
+      <ion-img width="100%" height="auto" src="img/businessBanner.png"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img width="100%" height="auto" src="img/businessBanner.png"></ion-img>
+    </ion-slide>
+    <ion-slide>
+      <ion-img width="100%" height="auto" src="img/businessBanner.png"></ion-img>
+    </ion-slide>
+  </ion-slides>
+  <div class="businessBaseInforBox">
+    <div class="titleBox">
+      <ion-icon name="ionitron" color="primary"></ion-icon>
+      <span class="buisnessName">好车网</span>
+      <ion-icon name="star" color="primary"></ion-icon>
+      <div class="businessSafeTags"><span>公司认证</span><span>平台保障</span></div>
+    </div>
+
+    <ion-list class="businessDetailInforLists">
+      <ion-item><ion-icon name="apps"></ion-icon>互联网 / 金融理财</ion-item>
+      <ion-item><ion-icon name="ios-call"></ion-icon>电话：400-111-1111</ion-item>
+    </ion-list>
+    <div class="businessExplainBox">汽车培训客户端提供汽车培训相关的产品展示、企业动态、企业介绍等实用功能。汽车培训客户端同时提供行业资讯等常识类信息。汽车培训客户端提供汽车培训相关的产品展示、企业动态、企业介绍等实用功能。汽车培训客户端同时提供息。</div>
+  </div>
+  <div class="businessProductAd businessInforContent">
+    <div class="businessDetailTitleCom">推广中的产品</div>
+    <ion-card (click)="goProductDetail()">
+      <img src="img/businessBanner.png">
+      <ion-row class="productNameBox">
+        <ion-col width-67>幼儿英语 5-9岁年龄段</ion-col>
+        <ion-col width-33>佣金：666元</ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card>
+      <img src="img/businessBanner.png">
+      <ion-row class="productNameBox">
+        <ion-col width-67>幼儿英语 5-9岁年龄段</ion-col>
+        <ion-col width-33>佣金：666元</ion-col>
+      </ion-row>
+    </ion-card>
+  </div>
+  <div class="businessIntroduceBox businessInforContent">
+    <div class="businessDetailTitleCom">商家介绍</div>
+    <div class="businessExplainBox">汽车培训客户端提供汽车培训相关的产品展示、企业动态、企业介绍等实用功能。汽车培训客户端同时提供行业资讯等常识类信息。另外汽车培训客户端还提供一键呼叫、发送短信等手机直连功能，方便用户咨询。</div>
+  </div>
+  <div class="businessEvaluateBox businessInforContent">
+    <div class="businessDetailTitleCom">评价<button ion-button clear class="lookMore">查看更多</button></div>
+    <ion-list class="evaluteListsBox">
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="img/midautumn.jpg">
+        </ion-avatar>
+        <h2>李大伟 <ion-note>2017-02-03 10:29</ion-note></h2>
+        <p class="evaluateContent">汽车培训客户端提供汽车培训相关的产品展示、企业动态、企业介绍等实用功能。汽车培训客户端同时提供行业资讯等常识类信息。</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="img/midautumn.jpg">
+        </ion-avatar>
+        <h2>李大伟 <ion-note>2017-02-03 10:29</ion-note></h2>
+        <p class="evaluateContent">汽车培训客户端提供汽车培训相关的产品展示.</p>
+      </ion-item>
+      <ion-item>
+        <ion-avatar item-left>
+          <img src="img/midautumn.jpg">
+        </ion-avatar>
+        <h2>李大伟 <ion-note>2017-02-03 10:29</ion-note></h2>
+        <p class="evaluateContent">汽车培训客户端提供汽车培训相关的产品展示、企业动态、企业动态、企业介绍等实用功能。汽车培训客户端同时提供行业资讯等常识类信息。企业介绍等实用功能。汽车培训客户端同时提供行业资讯等常识类信息。</p>
+      </ion-item>
+    </ion-list>
+    <button class="evaluteButton" ion-button full clear (click)="goEvalutePage()">发表评论</button>
+  </div>
+  <div style="height:50px;width:100%;"></div>
+  <div class="consultationFixedBtn"><button ion-button full><ion-icon name="ios-chatbubbles-outline"></ion-icon>咨 询</button></div>
+</ion-content>

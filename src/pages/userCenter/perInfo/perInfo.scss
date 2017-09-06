@@ -1,0 +1,27 @@
+
+
+/*个人信息*/
+.perInfo{
+  .setInfoList .selectitem .select-icon .select-icon-inner{border-left: none;border-right: none}
+  .arrowRight{color:#f2f2f2 }
+  ion-list.setInfoList .item .item-inner{border-bottom:1px solid #d8d8d8}
+  ion-list.setInfoList .item:last-child .item-inner{border-bottom:none}
+  ion-list.setInfoList .item:last-child{border-bottom: none;}
+
+  ion-list.setInfoList ion-item-divider{min-height: 16px;padding-left: 0px;}
+  ion-list.setInfoList ion-item-divider .input-wrapper ion-label{margin: 0; }
+
+  ion-list.setInfoList ion-select .select-placeholder {color: #ccc;font-family: "microsoft yahei"}
+
+  .headPicW{width: 60px;height: 60px;border-radius: 100%;}
+  .nickNamPlace{text-align: right;color: #cccccc;margin: 0 17px 0 8px;    position: relative;
+    top: -1px;}
+  ion-list.setInfoList .item.nicName{border-bottom: none}
+  ion-list.setInfoList .item.nicName .item-inner{border-bottom: none}
+  ion-list.setInfoList .item-select ion-label{color: #999;}
+  ion-list.setInfoList ion-label.insert{color: #999;}
+
+
+}
+
+.alert-button:last-child{font-weight: normal;color: #f5594a}

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>销售线索</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="clueDetail bgGrey">
+  <ion-list class="clueBaseInfo">
+    <ion-item>幼儿英语5-9岁年龄段</ion-item>
+    <ion-item class="money"><ion-icon name="ios-alarm"></ion-icon>佣金：2000元</ion-item>
+    <ion-item class="busName"><ion-icon name="ios-alarm"></ion-icon>商家：好好学车网</ion-item>
+    <ion-item class="submitTime"><ion-icon name="ios-alarm"></ion-icon>提交时间：2017-02-05</ion-item>
+  </ion-list>
+  <div class="div-14"></div>
+  <div class="stateList " >
+    <div class="titleLine">状态</div>
+    <div class="stateShitu" [style.height]="stateListHeight">
+      <div class="state state1">
+        <div class="stateName">未读</div>
+        <div class="statetime"><span>2017-02-03</span><span>10:29</span></div>
+      </div>
+      <div class="state state2">
+        <div class="stateName">已接收</div>
+        <div class="statetime"><span>2017-02-03</span><span>10:29</span></div>
+        <div class="statedetail">商家已交押金20元</div>
+      </div>
+      <div class="state state3">
+        <div class="stateName red">处理中</div>
+        <div class="statetime red" ><span>2017-02-03</span><span>10:29</span></div>
+        <div class="statedetail">最近查看时间：2017-02-04 10:30   共5次查看</div>
+      </div>
+      <div class="state state4">
+        <div class="stateName grey">成单</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="div-14"></div>
+  <div class="stateList cluelsit">
+
+    <div class="titleLine">提交的线索</div>
+    <div class="detailLine">
+      <div class="info">姓名：李洋</div>
+      <div class="info">电话：13515264795</div>
+      <div class="info">姓名：江苏省常州市新北区常州创意产业园D栋-324</div>
+      <div class="info">备注：备注信息</div>
+    </div>
+    <div class="picLine">
+      <img src="img/myCenter/headtext.jpeg">
+      <img src="img/myCenter/headtext.jpeg">
+      <img src="img/myCenter/headtext.jpeg">
+    </div>
+    <div class="voiceLine">
+      <audio src="media/mpstest.mp3"></audio>
+    </div>
+    <div class="vedioLine">
+      <video src="media/mpstest.mp3"></video>
+    </div>
+  </div>
+
+</ion-content>

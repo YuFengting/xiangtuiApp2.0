@@ -1,0 +1,25 @@
+
+
+/*账单页面*/
+.billList{
+  .accountTop{height: 60px;background: #f45949;color: white;padding: 5px 2%;}
+  .accountTop .accountMoiney{width: auto;float: left}
+  .accountTop .accountMoiney span.moneyIcon{font-size: 1.6rem}
+  .accountTop .accountMoiney span.moneyNum{font-size: 3rem}
+  .accountTop .accountBtn{float: right;width: 20%;position: relative;top: 0.3rem;}
+  .accountTop .accountBtn button{width: 100%;height: 2.3rem;font-size: 1.4rem; padding: 0 0rem;margin: 0;}
+  ion-list.accountList{margin-bottom: 0;}
+  ion-list.accountList ion-item-divider ion-label{margin: 8px 8px 8px 0;}
+  ion-thumbnail.accountListIonThum{max-width: 4.6rem;max-height: 4.6rem;min-width: 3.8rem;min-height: 4.6rem;}
+  ion-thumbnail.accountListIonThum img{max-width: 3.6rem;max-height: 3.6rem;border-radius: 100%; position: relative;top: 0.5rem;}
+  ion-thumbnail.accountListIonThum[item-left]{margin: 8px 8px 8px 0;}
+  ion-list.accountList ion-item  .timeInfo{color: #999999;text-align: center}
+  ion-list.accountList ion-item  .timeInfo div{text-align: center;width: 100%;}
+  ion-list.accountList  .item p.taskinfo{color: #999999}
+  ion-list.accountList ion-item  .timeInfo div.date{font-size: 1.6rem}
+  ion-list.accountList ion-item  .timeInfo div.time{font-size: 1rem}
+  ion-list.accountList .item .item-inner{border-bottom: none}
+  ion-list.accountList ion-item{border-bottom: 1px solid #d8d8d8}
+  ion-list.accountList ion-item:last-child{border-bottom: none;}
+
+}

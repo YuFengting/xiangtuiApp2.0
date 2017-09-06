@@ -1,0 +1,39 @@
+
+.alert-button:last-child{font-weight: normal;color: #f5594a}
+/*线索详情页*/
+.clueDetail{
+  ion-list.clueBaseInfo{margin-bottom: 0px}
+  ion-list.clueBaseInfo .item {color:#333}
+  ion-list.clueBaseInfo .item.money {color:#ff6640}
+  ion-list.clueBaseInfo  .item .item-inner{border-color: #d8d8d8}
+  ion-list.clueBaseInfo  .item:last-child{border-bottom: none}
+  ion-list.clueBaseInfo .item ion-icon{color:#cbcbcb; margin-right: 10px;position: relative;top: 2px}
+  .div-14{width: 100%;height: 14px;background: transparent}
+
+  .stateList{width: 100%;padding-left: 16px;height: auto;background: white;font-size: 1.6rem;padding-bottom: 20px;}
+  .stateList .titleLine{width: 100%;height: 54px;line-height: 54px;color: #333;border-bottom: 1px solid #d8d8d8}
+  .stateList .stateShitu{width: 100%;height:412px;background-image: url("../../img/myCenter/clueDetial/stateLine.png") ;background-repeat: no-repeat;background-size: auto 400px;padding-left: 35px;overflow: hidden}
+  .state1H{height: 100px}
+  .state2H{height: 224px}
+  .state3H{height: 355px}
+  .state4H{height: 412px}
+  .stateShitu .state1{padding-top: 16px;height: 118px;}
+  .stateShitu .state2{height: 130px}
+  .stateShitu .state3{height: 130px;}
+  .stateShitu .state .stateName{color: #000;line-height: 2.6rem;}
+  .stateShitu .state .statetime{color: #cbcbcb;font-size: 1.4rem;line-height: 2.6rem}
+  .stateShitu .state .statetime span:first-child{margin-right: 5px;}
+  .stateShitu .state .statedetail{color: #7d7d7d;font-size: 1.4rem}
+  .stateShitu .state .stateName.red{color: #f45949}
+  .stateShitu .state .statetime.red{color: #f45949}
+  .stateShitu .state .stateName.grey{color: #cbcbcb}
+
+  .cluelsit{font-size: 1.4rem}
+
+  .detailLine{padding-right: 16px;border-bottom: 1px solid #d8d8d8;text-align: justify}
+  .detailLine .info{width: 100%;padding: 5px 0px;}
+  .picLine{width: 100%;padding: 10px 0px;border-bottom: 1px solid #d8d8d8;}
+  .picLine img{width: 5.6rem;height:5.6rem;border-radius: 0.4rem;margin-right: 5px}
+  .vedioLine{padding: 10px 16px 10px 0px}
+  .voiceLine{padding: 10px 16px 10px 0px; border-bottom: 1px solid #d8d8d8;}
+}
