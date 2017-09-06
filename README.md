@@ -8,4 +8,4 @@ ionic2+angular完成的享推app2.0版本
 
 2.下次只需要执行下面的命令,项目启动成功:
 
-ionic serve
+    ionic serve
